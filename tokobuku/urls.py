@@ -9,7 +9,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Home.urls')),
     path('kategori/', include('Kategori.urls')),
+<<<<<<< HEAD
+=======
     path('detailbook', include('Detail.urls'))
+>>>>>>> release
 ]
 
 if settings.DEBUG:
