@@ -1,50 +1,34 @@
+{% extends 'template.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>
-        "Kategori | Buku Kita"
-    </title>
-    <link rel='stylesheet' href="{%static 'css/bootstrap.min.css' %}">
-    <link rel='stylesheet' href="{%static 'css/css_style.css' %}">
-</head>
-<body>
-    <div class='album'>
-        <div class="first">
-            <div class="container-fluid">
-                <div class="row ">
-                    <div class="col-md-12 offset-md-0 col-sm-12">
-                        <div class="headhome">
-                            <h2><a href=../ >Semua Kategori</a></h2>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </div>
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <h4>KATALOG KATEGORI</h4>
     </div>
-    <br>
+</div>
+<br>
     <div class="container-fluid">
         <div class="row">
             {% for data in agama_obj %}
-            <div class="col-md-2 col-sm-6 col-12">
-                <div class="learn-img">
-                    <div class="card mb-2">
-                        <div class="barang1">
-                            <img src="../../media/{{data.gambar}}"/>
-                            <h5>{{data.judul}}</h5>
-                            <h5>{{data.publisher}}</h5>
-                            <h5>{{data.ketersediaan}}</h5>
-                            <h5>{{data.harga}}</h5>
-                            <h5>{{data.hargadiskon}}</h5>
-                        </div>
-                    </div>
+            <div class="col-sm-2 my-3">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="../../media/{{data.gambar}}" alt="">
+                        <div class="overlay"><br>
+                        <h5>Judul: {{data.judul}}</h5>
+                        <h5>Publisher: {{data.publisher}}</h5>
+                        <h5>Stock sisa: {{data.ketersediaan}}</h5>
+                        <h5>Harga: {{data.harga}}</h5>
+                        <h5>Harga Diskon: {{data.hargadiskon}}</h5>
+                        <a class="info" href="#">BUY</a>
+                        </div>    
                 </div>
             </div>
             {% endfor %}
         </div> 
     </div>
     <br>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row">
             {% for data in nonfiksi_obj %}
             <div class="col-md-2 col-sm-6 col-12">
@@ -64,8 +48,8 @@
             {% endfor %}
         </div> 
     </div>
-    <br>
-    <div class="container-fluid">
+    <br> -->
+    <!-- <div class="container-fluid">
         <div class="row">
             {% for data in romance_obj %}
             <div class="col-md-2 col-sm-6 col-12">
@@ -124,10 +108,7 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
-        </div> 
+    {% endfor %}
     </div>
-
-   
-</body>
-</html>
+    </div> -->
+    {% endblock %}}
