@@ -1,0 +1,24 @@
+{% extends 'template.html' %}
+{% load static %}
+<!--slider -->
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        {% for data in agama_obj %}
+        <div class="col-sm-2 my-3">
+            <div class="hovereffect">
+                <img class="img-responsive" src="../../media/{{data.gambar}}" alt="">
+                    <div class="overlay"><br>
+                    <h5>Judul: {{data.judul}}</h5>
+                    <h5>Publisher: {{data.publisher}}</h5>
+                    <h5>Stock sisa: {{data.ketersediaan}}</h5>
+                    <h5>Harga: {{data.harga}}</h5>
+                    <h5>Harga Diskon: {{data.hargadiskon}}</h5>
+                    <a class="info" href="#">BUY</a>
+                    </div>    
+            </div>
+        </div>
+        {% endfor %}
+    </div> 
+</div>
+{% endblock %}}
