@@ -1,0 +1,24 @@
+.headhome{
+    background-color: rgb(240, 240, 240);
+    font-family: sans-serif;
+}
+
+.headhome a{
+    font-size: 14px;
+    color: black;
+}
+
+.album{
+    background-color: rgb(240, 240, 240);
+}
+
+.barang1 img{
+    width: 100%;
+    text-align: center;
+}
+
+.barang1 h5{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+}

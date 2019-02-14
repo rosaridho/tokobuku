@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Kategori
+from .models import agama,nonfiksi,romance,sastra,teknik
 
 # Register your models here.
-my_model = [Kategori]
+my_model = [agama,nonfiksi,romance,sastra,teknik]
 admin.site.register(my_model)
