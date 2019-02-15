@@ -21,3 +21,6 @@ def input_buku(request):
         form = PostForm()
 
     return render(request, 'tambahbuku.html', {'form':form})
+
+def download(request):
+    return render(request, 'download.html')
