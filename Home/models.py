@@ -14,10 +14,7 @@ class buku(models.Model):
     harga = models.CharField(max_length = 50)
     hargadiskon = models.CharField(max_length = 50)
     kategori = models.CharField(max_length = 50)
-<<<<<<< HEAD
     sinopsis = models.TextField(max_length = 1000)
-=======
->>>>>>> release
 
     def __str__(self):
         return self.judul
