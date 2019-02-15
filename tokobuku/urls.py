@@ -11,7 +11,10 @@ urlpatterns = [
     path('kategori/', include('Kategori.urls')),
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     path('detailbook', include('Detail.urls'))
+>>>>>>> release
 >>>>>>> release
 ]
 
