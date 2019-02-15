@@ -2,37 +2,36 @@
 {% load static %}
 <!--slider -->
 {% block content %}
-
 <div class="album py-5 bg-light"> 
-    <div class="container">
-        <div class="row">
-            {% for data in buku_obj %}
-            <div class="col-md-2 col-sm-6 col-12">
-                <div class="learn-img">
-                    <img src="../../media/{{data.gambar}}">
+        <div class="container">
+            <div class="row">
+                {% for data in buku_obj %}
+                <div class="col-md-2 col-sm-6 col-12">
+                    <div class="learn-img">
+                        <img src="../../media/{{data.gambar}}">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-12">
-                <div id="learn-title">
-                    <h5>Judul: {{data.judul}}</h5>
-                    <h5>Publisher: {{data.publisher}}</h5>
-                    <h5>Stock sisa: {{data.ketersediaan}}</h5>
-                    <h5>Harga: {{data.harga}}</h5>
-                    <h5>Harga Diskon: {{data.hargadiskon}}</h5>
-                    <h5>Sinopsis: {{data.sinopsis}}</h5>
+                <div class="col-md-6 col-sm-6 col-12">
+                    <div id="learn-title">
+                        <h5>Judul: {{data.judul}}</h5>
+                        <h5>Publisher: {{data.publisher}}</h5>
+                        <h5>Stock sisa: {{data.ketersediaan}}</h5>
+                        <h5>Harga: {{data.harga}}</h5>
+                        <h5>Harga Diskon: {{data.hargadiskon}}</h5>
+                        <h5>Sinopsis: {{data.sinopsis}}</h5>
+                    </div>
                 </div>
-            </div>
-            {% endfor %}
-            <div class="album py-5 bg-light"> 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-6 col-12">
-                            <a href=../>Kembali ke Home</a>  
+                {% endfor %}
+                <div class="album py-5 bg-light"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-6 col-12">
+                                <a href=../>Kembali ke Home</a>  
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}}
