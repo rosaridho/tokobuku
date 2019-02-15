@@ -1,4 +1,4 @@
 #!/bin/sh
 File="split.sql"
-Database="db"
-mysql $Database < $File
+Database="db.sqlite3"
+sqlite3 $Database < $File
