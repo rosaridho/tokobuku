@@ -6,6 +6,13 @@
         <h4>KATALOG KATEGORI</h4>
     </div>
 </div>
+   <!-- ini dB -->
+   <form action="{% url 'run_sh' %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">Refresh</button>
+</form>
+<br>
+<!-- ini dB -->
 <div class="container-fluid">
         <div class="row">
             <h4>Buku Agama</h4>
