@@ -1,0 +1,6 @@
+<h2>New Book!</h2>
+<a href="../">Kembali ke halaman utama</a>
+<form method="POST" class="post-form" enctype="multipart/form-data"> {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>
