@@ -17,10 +17,10 @@
         </div>
         <hr>
 <!-- content -->
-<div class="album py-5 bg-light">
-    <div class="container-fluid">
+<div class="album py-5 bg-white">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-md-12 offset_md-4 text center">
+            <div class="col-md-12 offset_md-4 text-center MyButton">
                 <a href="tambahbuku">Tambah Buku</a>
             </div>
         </div>
@@ -42,7 +42,7 @@
                                <h5>Sisa stock: {{data.ketersediaan}}</h5>
                                <h5>Harga: {{data.harga}}</h5>
                                <h5>Harga Diskon: {{data.hargadiskon}}</h5>
-                               <a href="{% url 'lengkapBuku' post_id=data.id %}">Lihat detail</a>   
+                               <a class="info" href="{% url 'lengkapBuku' post_id=data.id %}">Lihat detail</a>   
                                <a class="info" href="detailbook">BUY</a>
                     </div>    
                 </div>

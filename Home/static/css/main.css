@@ -270,7 +270,7 @@ img {vertical-align: middle;}
 {
 	border: 2px solid #20684f;
 	overflow: auto;
-	border-radius: 5px;
+	border-radius: 10px;
 	-moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     margin-top: 15px;
@@ -297,7 +297,7 @@ img {vertical-align: middle;}
 	background-color: #20684f;
 	color: #fff;
 	float: right;
-	padding: 10px;
+	padding: 18px;
 	/* border-top-right-radius: 5px; */
 	-moz-border-radius-top-right: 5px;
 	-webkit-border-radius-top-right: 5px;
@@ -456,8 +456,8 @@ img {vertical-align: middle;}
     filter:alpha(opacity=0);
     -webkit-transition:all .2s ease-in-out;
     transition:all .2s ease-in-out;
-    margin:50px 0 0;
-    padding:7px 14px;
+    margin:20px 0 0;
+    padding:7px 15px;
     }
     
     .hovereffect a.info:hover {
@@ -574,3 +574,37 @@ span.psw {
     width: 100%;
   }
 } 
+
+input.MyButton {
+  width: 300px;
+  padding-top: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 80%;
+  background: #3366cc;
+  color: #fff;
+  border: 1px solid #3366cc;
+  border-radius: 10px;
+  -moz-box-shadow: 6px 6px 5px #999;
+  -webkit-box-shadow: 6px 6px 5px #999;
+  box-shadow: 6px 6px 5px #999;
+  }
+  input.MyButton:hover {
+  color: #ffff00;
+  background: #000;
+  border: 1px solid #fff;
+  text-decoration: none;
+  }
+  .MyButton{
+    text-decoration: none;
+  }
+  .btn-success{
+      background-color: white;
+      border: gray;
+      color: white;
+  }
+  .btn-success:hover{
+      background: #20684f;
+      font-display: white;
+}
+
