@@ -18,5 +18,5 @@ def kategori(request):
 
         subprocess.call('/home/alphatech/Desktop/Exercise_ATA/workdir/tokobuku6_mysql/runsplit.sh')
                          
-    return render(request, '/home/alphatech/Desktop/Exercise_ATA/workdir/tokobuku6_mysql/Home/templates/kategori.html', {'agama_obj':agama_obj, 'nonfiksi_obj':nonfiksi_obj, 'romance_obj':romance_obj, 'sastra_obj':sastra_obj, 'teknik_obj':teknik_obj})
+    return render(request, 'kategori.html', {'agama_obj':agama_obj, 'nonfiksi_obj':nonfiksi_obj, 'romance_obj':romance_obj, 'sastra_obj':sastra_obj, 'teknik_obj':teknik_obj})
 
