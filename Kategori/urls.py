@@ -4,5 +4,5 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('', views.kategori, name='kategori'),
-    url(r'^run_sh/$', views.kategori, name='run_sh'),
+    url(r'^run-sh/$', views.kategori, name='run_sh'),
 ]
