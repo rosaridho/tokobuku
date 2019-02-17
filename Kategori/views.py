@@ -16,7 +16,7 @@ def kategori(request):
         # and for `tiger.mid`
         # subprocess.call(['python', '/path/to/text4midiALLMilisecs.py', '/path/to/tiger.mid'])
 
-        subprocess.call('runsplit.sh')
+        subprocess.call('/home/alphatech/Desktop/Exercise_ATA/workdir/tokobuku6_mysql/runsplit.sh')
                          
     return render(request, 'kategori.html', {'agama_obj':agama_obj, 'nonfiksi_obj':nonfiksi_obj, 'romance_obj':romance_obj, 'sastra_obj':sastra_obj, 'teknik_obj':teknik_obj})
 
