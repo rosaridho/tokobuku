@@ -12,7 +12,7 @@ def kategori(request):
     teknik_obj = teknik.objects.all()
 
     if request.POST:
-        subprocess.call('/home/alphatech/Desktop/Exercise_ATA/workdir/tokobuku/runsplit.sh')
-                         
+        subprocess.call('/home/alphatech/Desktop/Exercise_ATA/workdir/tokobuku6_sqlite/runsplit.sh')
+        
     return render(request, 'kategori.html', {'agama_obj':agama_obj, 'nonfiksi_obj':nonfiksi_obj, 'romance_obj':romance_obj, 'sastra_obj':sastra_obj, 'teknik_obj':teknik_obj})
 
